@@ -10,27 +10,27 @@ using namespace std;
 
 
 
+
 Student::Student(string name,int credits,double qp){
-    name = "";
-    credits = 0;
-    qp = 0.0;
-
+this->name = name;
+this->credits = credits;
+this->qp = qp;
 }
 
 
-double computeGPA (const Student& aStudent)
+double computeGPA()
 {
-     if (aStudent.credits ==0)
-        return 0.0;
-    else return aStudent.qp / aStudent.credits;
+if (this->credits > 0)
+return this->qualityPoints / this->credits;
+else
+return 0.0;
 }
 
-void addGrade(Student& aStudent, string grade, int credits)
+void addGrade(string grade, int credits)
 {
-    if (credits < 0)
-        credits =0;
-    aStudent.credits += credits;
-   aStudent.qp += findGradeValue (gradeValues, 11, grade) * credits;
+this->credits += credits;
+double v = findGradeValue(gradeValues, 11, grade);
+this->qualityPoints += credits * v;
 }
 
 

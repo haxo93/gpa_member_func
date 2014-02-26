@@ -10,11 +10,15 @@
 class Student
 {
 public:
-    Student(std::string, int, double);
-    //variables
-    std::string name;
-    int credits;
-    double qp;
+    struct Student {
+        string name;
+        int credits;
+        double qualityPoints;
+        Student(){
+        name = "";
+        credits = 0;
+        qualityPoints = 0;
+        }
     //const GradeValue gradeValues;
     //functions
     //std::string student(std::string name,int credits, double qp);
