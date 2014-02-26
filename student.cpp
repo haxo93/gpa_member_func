@@ -17,6 +17,7 @@ Student::Student(string name,int credits,double qp){
 
 }
 
+
 double computeGPA (const Student& aStudent)
 {
      if (aStudent.credits ==0)

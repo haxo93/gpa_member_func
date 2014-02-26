@@ -4,6 +4,8 @@
 #include <iostream>
 #include <iomanip>
 #include <string>
+#include "gradeValue.h"
+#include "gradeValue.cpp"
 
 class Student
 {
@@ -16,7 +18,7 @@ public:
     //const GradeValue gradeValues;
     //functions
     //std::string student(std::string name,int credits, double qp);
-    void addGrade(std::string grade, int credits);
+    void addGrade(const GradeValue, std::string grade, int credits);
     double computeGPA();
 
 };
