@@ -1,7 +1,6 @@
 #ifndef STUDENT_H_INCLUDED
 #define STUDENT_H_INCLUDED
 #include <fstream>
-#include "gradeValue.h"
 #include <iostream>
 #include <iomanip>
 #include <string>
@@ -14,14 +13,14 @@ public:
     std::string name;
     int credits;
     double qp;
-//    const GradeValue gradeValues;
+    //const GradeValue gradeValues;
     //functions
     //std::string student(std::string name,int credits, double qp);
     void addGrade(std::string grade, int credits);
     double computeGPA();
-    void gpaCalc();
 
 };
+
 
 
 

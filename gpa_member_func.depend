@@ -7,9 +7,8 @@
 	"student.h"
 	"gradeValue.h"
 
-1393430830 c:\users\ryan\dropbox\computer science\gpa_member_func\student.h
+1393435763 c:\users\ryan\dropbox\computer science\gpa_member_func\student.h
 	<fstream>
-	"gradeValue.h"
 	<iostream>
 	<iomanip>
 	<string>

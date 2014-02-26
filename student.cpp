@@ -11,12 +11,11 @@ using namespace std;
 
 
 Student::Student(string name,int credits,double qp){
-
+    name = "";
+    credits = 0;
+    qp = 0.0;
 
 }
-
-
-
 
 double computeGPA (const Student& aStudent)
 {
