@@ -7,14 +7,6 @@
 
 using namespace std;
 
-/**
- * Read a student record, followed by a number of grade records.
- * Update the student record to reflect the new grades, then
- * compute and print the student's GPA.
- *
- * @param input
- * @param output
- */
 void gpaCalc (istream& input, ostream& output)
 {
   string name;

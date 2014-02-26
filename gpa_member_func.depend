@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1393436054 source:c:\users\ryan\dropbox\computer science\gpa_member_func\gpacalc.cpp
+1393452278 source:c:\users\ryan\dropbox\computer science\gpa_member_func\gpacalc.cpp
 	<fstream>
 	<iostream>
 	<iomanip>
@@ -7,7 +7,7 @@
 	"student.h"
 	"gradeValue.h"
 
-1393451859 c:\users\ryan\dropbox\computer science\gpa_member_func\student.h
+1393452706 c:\users\ryan\dropbox\computer science\gpa_member_func\student.h
 	<fstream>
 	<iostream>
 	<iomanip>
