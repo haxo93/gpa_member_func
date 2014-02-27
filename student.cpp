@@ -16,13 +16,20 @@ Student::Student()
 Student::Student(string tempname,int tempcredits, double tempqp)
 {
     name = tempname;
-    credits = tempcredits;
-    qp = tempqp;
+    if (tempcredits > 0)
+        credits = tempcredits;
+    else
+        credits = 0;
+    if (tempqp > 0)
+        qp = tempqp;
+    else
+        qp = 0;
+
 }
 
 double Student::computeGPA()
 {
-    if (credits > 0)
+    if (credits > 0 || qp > 0)
         return qp/credits;
     else
         return 0.0;

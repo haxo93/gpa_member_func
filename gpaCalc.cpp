@@ -44,6 +44,7 @@ int main (int argc, char** argv)
 
   if (argc > 1)
     {
+
       ifstream inputFile (argv[1]);
       gpaCalc (inputFile, cout);
     }
