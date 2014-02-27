@@ -3,33 +3,28 @@
 #include <iomanip>
 #include <string>
 #include "student.h"
-#include "gradeValue.h"
 
 using namespace std;
 
-
-Student::Student(string name,int credits, double qp){
-this->name = name;
-this->credits = credits;
-this->qp = qp;
+Student::Student(string name,int credits, double qp)
+{
+    this->name = name;
+    this->credits = credits;
+    this->qp = qp*credits;
 }
 
-
-double computeGPA()
+double Student::computeGPA()
 {
-if (this->credits > 0)
-return this->qp / this->credits;
-else
-return 0.0;
+    if (this->credits > 0)
+        return this->qp / this->credits;
+    else
+        return 0.0;
 }
 
-void addGrade(string grade, int credits)
+void Student::addGrade(string grade, int credits)
 {
-this->credits += credits;
-double v = findGradeValue(gradeValues, 11, grade);
-this->qp += credits * v;
+    this->credits = this->credits + credits;
+    double v = findGradeValue(grade);
+    this->qp = (credits * v) + qp;
 }
 ;
-
-
-

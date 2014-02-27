@@ -5,7 +5,6 @@
 #include <iomanip>
 #include <string>
 #include "gradeValue.h"
-#include "gradeValue.cpp"
 
 class Student
 {
@@ -14,10 +13,11 @@ public:
         std::string name;
         int credits;
         double qp;
-        Student(){
-        name = "";
-        credits = 0;
-        qp = 0;
+        Student()
+        {
+            name = "";
+            credits = 0;
+            qp = 0;
         }
     //const GradeValue gradeValues;
     //functions
@@ -28,12 +28,5 @@ public:
 };
 
 
-
-
-#endif // STUDENT_H_INCLUDED
-//*std::string student(std::string name, int credits, double qp);
-//void addGrade(struct Student& , std::string grade, int credits);
-//double computeGPA (struct Student&);
-
-//#endif // STUDENT_H_INCLUDED
+#endif
 
