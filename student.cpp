@@ -6,25 +6,35 @@
 
 using namespace std;
 
-Student::Student(string name,int credits, double qp)
+Student::Student()
 {
-    this->name = name;
-    this->credits = credits;
-    this->qp = qp*credits;
+    name = "";
+    credits = 0;
+    qp = 0;
+}
+
+Student::Student(string tempname,int tempcredits, double tempqp)
+{
+    name = tempname;
+    credits = tempcredits;
+    qp = tempqp;
 }
 
 double Student::computeGPA()
 {
-    if (this->credits > 0)
-        return this->qp / this->credits;
+    if (credits > 0)
+        return qp/credits;
     else
         return 0.0;
 }
 
-void Student::addGrade(string grade, int credits)
+void Student::addGrade(string tempgrade, int tempcredits)
 {
-    this->credits = this->credits + credits;
-    double v = findGradeValue(grade);
-    this->qp = (credits * v) + qp;
+    credits += tempcredits;
+    double v = findGradeValue(tempgrade);
+    qp += tempcredits * v;
 }
-;
+
+
+
+
