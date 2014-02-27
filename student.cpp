@@ -16,6 +16,8 @@ Student::Student()
 Student::Student(string tempname,int tempcredits, double tempqp)
 {
     name = tempname;
+    if (tempcredits == 0 && tempqp == 0)
+        return;
     if (tempcredits > 0)
         credits = tempcredits;
     else
