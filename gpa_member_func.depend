@@ -30,3 +30,31 @@
 	<string>
 	"student.h"
 
+1393537592 source:c:\users\seffl_000\documents\github\gpa_member_func\gpacalc.cpp
+	<fstream>
+	<iostream>
+	<iomanip>
+	<string>
+	"student.h"
+	"gradeValue.h"
+
+1393537592 c:\users\seffl_000\documents\github\gpa_member_func\student.h
+	<fstream>
+	<iostream>
+	<iomanip>
+	<string>
+	"gradeValue.h"
+
+1393537592 c:\users\seffl_000\documents\github\gpa_member_func\gradevalue.h
+	<string>
+
+1393537592 source:c:\users\seffl_000\documents\github\gpa_member_func\gradevalue.cpp
+	"gradeValue.h"
+
+1393537592 source:c:\users\seffl_000\documents\github\gpa_member_func\student.cpp
+	<fstream>
+	<iostream>
+	<iomanip>
+	<string>
+	"student.h"
+
